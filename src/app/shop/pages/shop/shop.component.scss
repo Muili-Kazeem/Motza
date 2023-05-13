@@ -1,0 +1,21 @@
+.shop {
+  padding: 1rem .5rem;
+  position: relative;
+}
+
+.nav {
+  border: solid red 1px;
+
+  &_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+app-cart-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  // transform: translateX(120vw);
+}
