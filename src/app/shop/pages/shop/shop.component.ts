@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shop',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class ShopComponent {
 
+  isCartNavOpen: boolean = true;
+
+  constructor() { }
+
+  ngOnInit(): void {}
+
+  toggleCartNav() {
+    this.isCartNavOpen = !this.isCartNavOpen
+  }
+
+  navigate(): void {
+    this.isCartNavOpen = true;
+  }
 }

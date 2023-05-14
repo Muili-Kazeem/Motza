@@ -2,5 +2,47 @@
   padding: 2rem 1rem;
   background-color: #0b0a0a;
   color: white;
-  height: 40vh;
+
+  &__products {
+    max-height: 65vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+  }
+
+  &__product {
+    background-color: #181818;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+
+    .img {
+      width: 50px;
+      aspect-ratio: 1;
+    }
+
+    .name {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    p:not(.name) {
+      font-size: .9rem;
+      margin-block: .75rem;
+    }
+  }
+
+  .checkout {
+    margin-top: 1rem;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+.cart_title {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
 }

@@ -25,7 +25,7 @@ import { ProductPropComponent } from './pages/products/product-prop/product-prop
     imports: [
         CommonModule,
         ShopRoutingModule,
-        CartNavComponent
+        CartNavComponent,
     ]
 })
 export class ShopModule { }

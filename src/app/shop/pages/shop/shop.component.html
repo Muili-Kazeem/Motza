@@ -1,10 +1,11 @@
-<main class="shop container">
-  <nav class="nav">
+<main class="shop">
+  <nav class="nav container">
     <ul class="nav_list">
       <li class="nav_list__item"><a href="">Motza</a></li>
-      <li class="nav_list__item"><button>Cart</button></li>
+      <li class="nav_list__item"><button (click)="toggleCartNav()">Cart</button></li>
     </ul>
   </nav>
   <router-outlet></router-outlet>
-  <app-cart-nav></app-cart-nav>
+  <app-cart-nav [class.closeNav]="isCartNavOpen"></app-cart-nav>
+  <button [class.closeNav]="isCartNavOpen" class="closeCart" (click)="toggleCartNav()">Close</button>
 </main>

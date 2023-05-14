@@ -1,0 +1,44 @@
+.product {
+
+  &_img {
+    height: 50vh;
+  }
+
+  &_detail {
+    margin-block: 2rem;
+    display: flex;
+    gap: 3rem;
+
+    & > div {
+      width: 50%;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__description {
+      gap: 1rem;
+
+      .name {
+        font-size: 4.5rem;
+        line-height: .9;
+      }
+
+      .ingredient {
+        word-spacing: .5rem;
+      }
+    }
+
+    &__info {
+      gap: 1rem;
+      h3 {
+        font-size: 2rem;
+        margin-bottom: .5rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

@@ -1,10 +1,19 @@
 .shop {
-  padding: 1rem .5rem;
   position: relative;
+  overflow-x: hidden;
 }
 
 .nav {
-  border: solid red 1px;
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  a {
+    background-color: white;
+    padding: 1rem .5rem;
+    border-radius: 2rem;
+  }
 
   &_list {
     display: flex;
@@ -13,9 +22,22 @@
   }
 }
 
+.closeCart {
+  position: fixed;
+  left: 40vw;
+  top: 30px;
+  transition: all 200ms ease-in-out;
+}
+
 app-cart-nav {
-  position: absolute;
-  left: 0;
+  position: fixed;
+  left: 49vw;
   top: 0;
-  // transform: translateX(120vw);
+  width: 50vw;
+  height: 100vh;
+  transition: all 200ms ease-in-out;
+}
+
+.closeNav {
+  left: 120vw;
 }
