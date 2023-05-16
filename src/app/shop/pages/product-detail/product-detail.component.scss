@@ -7,7 +7,7 @@
   &_detail {
     margin-block: 2rem;
     display: flex;
-    gap: 3rem;
+    gap: 5rem;
 
     & > div {
       width: 50%;
@@ -27,6 +27,29 @@
       .ingredient {
         word-spacing: .5rem;
       }
+
+      .cta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: .5rem;
+
+        .quantity {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          border: solid black 2px;
+          padding: 0 1rem;
+          border-radius: 2rem;
+          overflow: hidden;
+        }
+
+        button.add {
+          padding-inline: 3rem;
+          color: wheat;
+          background-color: #000000;
+        }
+      }
     }
 
     &__info {
@@ -37,7 +60,7 @@
       }
 
       p {
-        font-size: 1.25rem;
+          font-size: 1.25rem;
       }
     }
   }

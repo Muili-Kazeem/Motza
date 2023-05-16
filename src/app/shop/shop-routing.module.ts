@@ -17,6 +17,14 @@ const routes: Routes = [
         pathMatch: "full"
       },
       {
+        path: 'cart',
+        component: CartComponent
+      },
+      {
+        path: 'checkout',
+        component: CheckoutComponent
+      },
+      {
         path: 'products',
         component: ProductsComponent,
       },
@@ -24,14 +32,6 @@ const routes: Routes = [
         path: 'products/:id',
         component: ProductDetailComponent
       },
-      {
-        path: 'cart',
-        component: CartComponent
-      },
-      {
-        path: 'checkout',
-        component: CheckoutComponent
-      }
     ]
   },
 

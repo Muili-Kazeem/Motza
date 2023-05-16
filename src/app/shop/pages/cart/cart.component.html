@@ -1,1 +1,39 @@
-<p>cart works!</p>
+<section class="cart">
+  <h3 class="cart_title">Cart</h3>
+  <div class="cart_detail container">
+    <div class="cart_detail__description">
+      <h3 class="name">Quinoa Illuminating Eye Cream</h3>
+      <span class="ingredient">Quinoa, Beetroot, Kakadu plum</span>
+      <p class="price">$150</p>
+      <div class="cta">
+        <p>QTY:</p>
+        <div class="quantity">
+          <button class="count">-</button> <span>4</span> <button class="count">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart_img">
+      <img src="../../../../assets/motor_bike2.jpg" alt="cart_product__image">
+    </div>
+  </div>
+
+  <div class="cart_total">
+    <div class="cart_total__labels">
+      <span>Tax 21%:</span>
+      <span>Quantity:</span>
+      <span>Total:</span>
+    </div>
+    <div class="cart_total__values">
+      <span> $123.40 </span>
+      <span> 3 </span>
+      <span> $720.09 </span>
+    </div>
+    <button> ORDER </button>
+    <!-- <div class="cart_total__values">
+      <span> <fa-icon [icon]="icon( (currency$|async)! )"></fa-icon>{{ cart.tax | currency }} </span>
+      <span> {{ itemsCount$ | async }} </span>
+      <span> <fa-icon [icon]="icon( (currency$|async)! )"></fa-icon>{{ cart.totalAmount | currency }} </span>
+    </div> -->
+  </div>
+</section>
