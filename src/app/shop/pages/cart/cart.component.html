@@ -1,6 +1,6 @@
-<section class="cart">
+<section class="cart container">
   <h3 class="cart_title">Cart</h3>
-  <div class="cart_detail container">
+  <div class="cart_detail">
     <div class="cart_detail__description">
       <h3 class="name">Quinoa Illuminating Eye Cream</h3>
       <span class="ingredient">Quinoa, Beetroot, Kakadu plum</span>
@@ -29,11 +29,6 @@
       <span> 3 </span>
       <span> $720.09 </span>
     </div>
-    <button> ORDER </button>
-    <!-- <div class="cart_total__values">
-      <span> <fa-icon [icon]="icon( (currency$|async)! )"></fa-icon>{{ cart.tax | currency }} </span>
-      <span> {{ itemsCount$ | async }} </span>
-      <span> <fa-icon [icon]="icon( (currency$|async)! )"></fa-icon>{{ cart.totalAmount | currency }} </span>
-    </div> -->
   </div>
+  <button> ORDER </button>
 </section>
